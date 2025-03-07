@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #008080;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* BMI Calculator styles */
+#bmi-calculator {
+    margin-bottom: 2rem;
+}
+
+#bmi-calculator h2 {
+    margin-top: 0;
+}
+
+#bmi-calculator form {
+    margin-bottom: 1rem;
+}
+
+#bmi-calculator label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#bmi-calculator input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#bmi-calculator button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bmi-calculator button:hover {
+    background-color: #006666;
+}
+
+#bmi-result {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Diet Plan styles */
+.diet-plan {
+    margin-bottom: 2rem;
+}
+
+.diet-plan h2 {
+    margin-top: 0;
+}
+
+.diet-plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.diet-plan li {
+    margin-bottom: 0.5rem;
+}
+
+.diet-plan li strong {
+    color: #008080;
+}
+
+/* Specific diet sections hidden by default */
+.hidden {
+    display: none;
+}

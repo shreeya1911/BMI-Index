@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Diet Plan with BMI Calculator</title>
+    <link rel="icon" type="image/png" href="images/BlackWhiteMinimalistAestheticInitialsFontLogo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>South Indian Diet Plan with BMI Calculator</h1>
+    </header>
+    
+    <main>
+        <section id="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <form id="bmi-form">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+                <br><br>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+                <br><br>
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            </form>
+            <div id="bmi-result"></div>
+        </section>
+
+        <section id="diet-plans">
+            <h2>Diet Plans</h2>
+            <div id="diet-plan-underweight" class="diet-plan hidden">
+                <h2>Diet Plan for Weight Gain</h2>
+                <h3>General Guidelines</h3>
+                <ul>
+                    <li>Eat More Frequently: Have 5-6 small meals throughout the day.</li>
+                    <li>Increase Protein Intake: Include more protein-rich foods like eggs, dairy, lean meats, and legumes.</li>
+                    <li>Choose Nutrient-Rich Foods: Opt for whole grains, fruits, vegetables, and healthy fats.</li>
+                    <li>Healthy Cooking Methods: Use steaming, grilling, and sautéing instead of frying.</li>
+                    <li>Stay Hydrated: Drink plenty of water, but avoid drinking water before meals to leave more room for food.</li>
+                </ul>
+
+                <h3>Sample Diet Plan</h3>
+                <h4>Morning</h4>
+                <ul>
+                    <li><strong>Upon Waking:</strong> A glass of warm water with lemon.</li>
+                    <li><strong>Breakfast (7:00 - 8:00 AM):</strong>
+                        <ul>
+                            <li>Option 1: Masala dosa with potato filling and coconut chutney</li>
+                            <li>Option 2: Paneer stuffed paratha with a side of curd</li>
+                            <li>Option 3: Oats porridge with whole milk and a handful of nuts or fruits.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Mid-Morning Snack (10:00 - 11:00 AM)</h4>
+                <ul>
+                    <li>Fresh fruit smoothie with a handful of nuts</li>
+                    <li>A handful of mixed nuts (almonds, walnuts, cashews)</li>
+                </ul>
+
+                <h4>Lunch (1:00 - 2:00 PM)</h4>
+                <ul>
+                    <li>Option 1: White rice or quinoa with a serving of dal, a vegetable curry, and a salad.</li>
+                    <li>Option 2: Chapati with a bowl of curry, a side of curd, and a vegetable sabzi.</li>
+                    <li>Option 3: Mixed vegetable salad with grilled chicken or paneer.</li>
+                </ul>
+
+                <h4>Evening Snack (4:00 - 5:00 PM)</h4>
+                <ul>
+                    <li>Banana milkshake or protein smoothie</li>
+                    <li>Whole grain sandwich with peanut butter or hummus</li>
+                </ul>
+
+                <h4>Dinner (7:00 - 8:00 PM)</h4>
+                <ul>
+                    <li>Option 1: Rice-based dish like biryani with a bowl of vegetable raita.</li>
+                    <li>Option 2: Grilled fish or chicken with a side of steamed vegetables and quinoa.</li>
+                    <li>Option 3: Vegetable soup with a side of whole grain bread and paneer.</li>
+                </ul>
+
+                <h4>Before Bed (9:00 - 10:00 PM)</h4>
+                <ul>
+                    <li>A glass of warm milk (whole milk) with a pinch of turmeric.</li>
+                </ul>
+            </div>
+
+            <div id="diet-plan-normal" class="diet-plan hidden">
+                <h2>Diet Plan for Normal Weight</h2>
+                <p>Maintain a balanced diet with a variety of foods to stay healthy and fit.</p>
+                <h3>General Guidelines</h3>
+                <ul>
+                    <li>Maintain a Balanced Diet: Include a variety of foods from all food groups.</li>
+                    <li>Regular Meals: Eat regular meals and healthy snacks to keep energy levels stable.</li>
+                    <li>Stay Hydrated: Drink plenty of water throughout the day.</li>
+                    <li>Healthy Cooking Methods: Use steaming, grilling, and sautéing instead of frying.</li>
+                    <li>Exercise Regularly: Combine a healthy diet with regular physical activity.</li>
+                </ul>
+    
+                <h3>Sample Diet Plan</h3>
+    
+                <h4>Morning</h4>
+                <ul>
+                    <li><strong>Upon Waking:</strong> A glass of warm water with lemon.</li>
+                    <li><strong>Breakfast (7:00 - 8:00 AM):</strong>
+                        <ul>
+                            <li>Option 1: Idli with sambar and a side of coconut chutney</li>
+                            <li>Option 2: Oats porridge with skimmed milk and a handful of nuts or fruits.</li>
+                            <li>Option 3: Ragi dosa with a side of vegetable sambar.</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <h4>Mid-Morning Snack (10:00 - 11:00 AM)</h4>
+                <ul>
+                    <li>Fresh fruit (e.g., apple, orange, or a small bowl of mixed berries)</li>
+                    <li>A handful of nuts (almonds or walnuts)</li>
+                </ul>
+    
+                <h4>Lunch (1:00 - 2:00 PM)</h4>
+                <ul>
+                    <li>Option 1: Brown rice or quinoa with a serving of dal, a vegetable curry, and a salad.</li>
+                    <li>Option 2: Chapati with a bowl of sambar, a side of curd, and a vegetable sabzi.</li>
+                    <li>Option 3: Mixed vegetable salad with grilled paneer or tofu.</li>
+                </ul>
+    
+                <h4>Evening Snack (4:00 - 5:00 PM)</h4>
+                <ul>
+                    <li>Green tea or herbal tea with a small bowl of roasted chana (chickpeas) or murmura (puffed rice).</li>
+                </ul>
+    
+                <h4>Dinner (7:00 - 8:00 PM)</h4>
+                <ul>
+                    <li>Option 1: Millet-based khichdi with a bowl of vegetable raita.</li>
+                    <li>Option 2: Grilled fish or chicken with a side of steamed vegetables.</li>
+                    <li>Option 3: Vegetable soup with a side of whole grain bread.</li>
+                </ul>
+    
+                <h4>Before Bed (9:00 - 10:00 PM)</h4>
+                <ul>
+                    <li>A glass of warm milk (low-fat) with a pinch of turmeric.</li>
+                </ul>
+ 
+            </div>
+
+            <div id="diet-plan-overweight" class="diet-plan hidden">
+                <h2>Diet Plan for Weight Loss</h2>
+                <h3>General Guidelines</h3>
+                <ul>
+                    <li>Eat More Fiber: Include plenty of vegetables, fruits, whole grains, and legumes.</li>
+                    <li>Stay Hydrated: Drink plenty of water throughout the day.</li>
+                    <li>Control Portions: Be mindful of portion sizes to avoid overeating.</li>
+                    <li>Healthy Cooking Methods: Use steaming, grilling, and sautéing instead of frying.</li>
+                    <li>Limit Sugars and Refined Carbs: Avoid sweets, sugary drinks, and refined flour products.</li>
+                </ul>
+
+                <h3>Sample Diet Plan</h3>
+                <h4>Morning</h4>
+                <ul>
+                    <li><strong>Upon Waking:</strong> A glass of warm water with lemon.</li>
+                    <li><strong>Breakfast (7:00 - 8:00 AM):</strong>
+                        <ul>
+                            <li>Option 1: Idli with sambar and a side of coconut chutney (limit chutney to 1-2 tablespoons)</li>
+                            <li>Option 2: Oats porridge with skimmed milk and a handful of nuts or fruits.</li>
+                            <li>Option 3: Ragi dosa with a side of vegetable sambar.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Mid-Morning Snack (10:00 - 11:00 AM)</h4>
+                <ul>
+                    <li>Fresh fruit (e.g., apple, orange, or a small bowl of mixed berries)</li>
+                    <li>A handful of nuts (almonds or walnuts)</li>
+                </ul>
+
+                <h4>Lunch (1:00 - 2:00 PM)</h4>
+                <ul>
+                    <li>Option 1: Brown rice or quinoa with a serving of dal, a vegetable curry, and a salad.</li>
+                    <li>Option 2: Chapati with a bowl of sambar, a side of curd, and a vegetable sabzi.</li>
+                    <li>Option 3: Mixed vegetable salad with grilled paneer or tofu.</li>
+                </ul>
+
+                <h4>Evening Snack (4:00 - 5:00 PM)</h4>
+                <ul>
+                    <li>Green tea or herbal tea with a small bowl of roasted chana (chickpeas) or murmura (puffed rice).</li>
+                </ul>
+
+                <h4>Dinner (7:00 - 8:00 PM)</h4>
+                <ul>
+                    <li>Option 1: Millet-based khichdi with a bowl of vegetable raita.</li>
+                    <li>Option 2: Grilled fish or chicken with a side of steamed vegetables.</li>
+                    <li>Option 3: Vegetable soup with a side of whole grain bread.</li>
+                </ul>
+
+                <h4>Before Bed (9:00 - 10:00 PM)</h4>
+                <ul>
+                    <li>A glass of warm milk (low-fat) with a pinch of turmeric.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value) / 100;
+
+            if (weight > 0 && height > 0) {
+                const bmi = (weight / (height * height)).toFixed(2);
+                let category = '';
+
+                if (bmi < 18.5) {
+                    category = 'Underweight';
+                    showDietPlan('underweight');
+                } else if (bmi >= 18.5 && bmi < 24.9) {
+                    category = 'Normal weight';
+                    showDietPlan('normal');
+                } else if (bmi >= 25 && bmi < 29.9) {
+                    category = 'Overweight';
+                    showDietPlan('overweight');
+                } else {
+                    category = 'Obese';
+                    showDietPlan('overweight'); // Assuming same diet plan for overweight and obese
+                }
+
+                document.getElementById('bmi-result').innerHTML = `Your BMI is ${bmi} (${category})`;
+            } else {
+                document.getElementById('bmi-result').innerHTML = 'Please enter valid values for weight and height.';
+            }
+        }
+
+        function showDietPlan(plan) {
+            const dietPlans = document.querySelectorAll('.diet-plan');
+            dietPlans.forEach(plan => plan.classList.add('hidden'));
+
+            document.getElementById(`diet-plan-${plan}`).classList.remove('hidden');
+        }
+    </script>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</body>
+</html>
